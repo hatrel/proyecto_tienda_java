@@ -1,0 +1,23 @@
+<div style="text-align: center;">Shopping Cart</div>
+<div style="background-color: black;">
+
+{{#.}}
+	<div style="margin: 25px" class ="carrito">
+		name: {{ NOMBRE }} <br>
+		<img src="mostrar_imagen?id={{ ID }}" height="40px"/> <br>
+		type: {{ DESCRIPCION }} <br>
+		price: {{ PRECIO }} <br>
+		size: {{ TALLA }} <br>
+		gender: {{ GENERO }} <br>
+		manufacturer: {{ FABRICANTE }} <br>
+		quantity: {{ CANTIDAD }} <br>
+		<a id-prenda="{{PRENDA_ID}}" class="enlace-borrar-producto-carrito" href="#"> DELETE PRODUCT </a>
+		
+	</div>
+{{/.}}
+
+</div>
+
+<div style="text-align: center; font-size: 1.5em; padding: 10px" class="carrito_boton">
+	<a href="#" id="realizar_pedido">PLACE ORDER</a>
+</div>

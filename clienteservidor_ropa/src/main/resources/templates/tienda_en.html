@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/tienda.css">
+<title>Insert title here</title>
+</head>
+<body>
+	<header>
+		<a class="logo">RAVE TO DEATH</a>
+		
+		<a class="accad" href="admin/obtenerPrendas">access administration</a>
+		
+		<div style="text-align: right;margin: 20px" id="login_usuario">
+			user not identified
+		</div>
+		
+		<div class="idiomas">
+			<a href="?idioma=es">ESPAÑOL</a>
+			<a href="?idioma=en">ENGLISH</a>
+			<a href="?idioma=fr">FRANÇAIS</a>
+		</div>
+	
+		<div class="categorias">
+			<a class="categoria" id="enlace_productos" href="#">PRODUCTS</a> &nbsp;&nbsp;
+			<a class="categoria" id="enlace_identificarme" href="#">IDENTIFY</a> &nbsp;&nbsp;
+			<a class="categoria" id="enlace_registrarme" href="#">REGISTER</a> &nbsp;&nbsp;
+			<a class="categoria" id="enlace_carrito" href="#">CART</a> &nbsp;&nbsp;
+		</div>
+	</header>
+	<main>
+		<div id="contenedor">	
+		</div>
+	</main>
+
+<!-- incluir los archivos de javascript necesarios -->
+<script src="librerias_js/jquery.js"></script>
+<script src="librerias_js/mustache.js"></script>
+<script src="javascript/globales.js"></script>
+<script>
+	idioma = "_en"
+</script>
+<script src="javascript/cargar_plantillas.js"></script>
+<script src="javascript/funciones_menu.js"></script>
+<script src="javascript/main.js"></script>
+
+
+</body>
+</html>

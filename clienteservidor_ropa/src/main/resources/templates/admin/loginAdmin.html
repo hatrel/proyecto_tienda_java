@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/admin.css">	
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="card-login">
+	<div>
+	<a>identificate para poder entrar en administracion</a>
+	</div>
+	
+	<div style="color: red" th:text="${mensaje}" ></div>
+	
+	<form action="admin/obtenerPrendas" method="post">
+		constraseña: <input class="lap" type="password" name="pass-admin"><br>
+		<input class="lab" type="submit" value="INICIAR SESION">
+	</form>
+</div>
+
+
+</body>
+</html>
