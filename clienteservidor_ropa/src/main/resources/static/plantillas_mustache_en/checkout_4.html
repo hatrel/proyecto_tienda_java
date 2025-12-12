@@ -1,0 +1,41 @@
+<div>PLACE ORDER - STEP 4</div>
+<div>Order Summary:</div>
+
+<br>
+
+<div class="checkout">
+    <div>Order items:</div>
+<div id="productos_pedido">
+    {{#prendas}}
+        <div style="margin: 10px">
+            Name: {{NOMBRE}} <br>
+            <img src="mostrar_imagen?id={{ ID }}" height="40px"/> <br>
+            Size: {{TALLA}} <br>
+            Price: {{ PRECIO }} <br>
+            Quantity: {{CANTIDAD}} <br>
+        </div>
+    {{/prendas}}
+</div>
+
+<br>
+
+<div>SHIPPING INFORMATION:</div>
+<div style="margin: 10px">
+    Full name: {{nombreCompleto}} <br>
+    Address: {{direccion}} <br>
+    Province: {{provincia}} <br>
+</div>
+
+<br>
+
+<div>PAYMENT INFORMATION:</div>
+<div style="margin: 10px">
+    Card type: {{tipoTarjeta}} <br>
+    Cardholder name: {{titularTarjeta}} <br>
+    Card number: {{numeroTarjeta}} <br>
+</div>
+
+<div>
+    <button style="padding: 10px" id="boton_confirmar_pedido">CONFIRM ORDER</button>
+</div>
+</div>

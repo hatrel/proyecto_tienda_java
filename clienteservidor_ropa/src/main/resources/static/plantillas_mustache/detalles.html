@@ -1,0 +1,21 @@
+<div class="detalle_producto_neon">
+
+    <div class="detalle_titulo neon-glow">
+        Detalles del Producto
+    </div>
+
+    <div class="detalle_imagen">
+        <img src="mostrar_imagen?id={{ producto.ID }}" alt="{{ producto.NOMBRE }}">
+    </div>
+
+    <div class="detalle_info">
+        <p><span>ID:</span> {{ producto.ID }}</p>
+        <p><span>Nombre:</span> {{ producto.NOMBRE }}</p>
+        <p><span>Descripción:</span> {{ producto.DESCRIPCION }}</p>
+        <p><span>Fabricante:</span> {{ producto.FABRICANTE }}</p>
+        <p><span>Talla:</span> {{ producto.TALLA }}</p>
+        <p><span>Precio:</span> {{ producto.PRECIO }} €</p>
+        <a href="#" class="enlace_comprar_producto" data-producto-id="{{producto.ID}}">AÑADIR AL CARRITO</a>
+    </div>
+
+</div>

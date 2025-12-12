@@ -1,0 +1,44 @@
+
+<div>REALIZAR PEDIDO - PASO 4</div>
+<div>Resumen del pedido:</div>
+
+<br>
+
+
+<div class="checkout">
+	<div>productos del pedido:</div>
+<div id="productos_pedido">
+	{{#prendas}}
+		<div style="margin: 10px">
+			Nombre: {{NOMBRE}} <br>
+			<img src="mostrar_imagen?id={{ ID }}" height="40px"/> <br>
+			Talla: {{TALLA}} <br>
+			precio: {{ PRECIO }} <br>
+			cantidad: {{CANTIDAD}} <br>
+		</div>
+	{{/prendas}}
+</div>
+
+<br>
+
+<div>DATOS DE ENVIO:</div>
+<div style="margin: 10px">
+	nombre completo: {{nombreCompleto}} <br>
+	dirección: {{direccion}} <br>
+	provincia: {{provincia}} <br>
+</div>
+
+<br>
+
+<div>DATOS DE PAGO:</div>
+<div style="margin: 10px">
+	tipo tarjeta: {{tipoTarjeta}} <br>
+	titular tarjeta: {{titularTarjeta}} <br>
+	numero tarjeta: {{numeroTarjeta}} <br>
+</div>
+
+<div>
+	<button style="padding: 10px" id="boton_confirmar_pedido">CONFIRMAR PEDIDO</button>
+</div>
+</div>
+
